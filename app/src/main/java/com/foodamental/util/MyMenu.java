@@ -11,8 +11,6 @@ import com.foodamental.R;
 import com.foodamental.activity.AlertPage;
 import com.foodamental.activity.Courses;
 import com.foodamental.activity.MyMainPage;
-import com.foodamental.activity.Parametres;
-import com.foodamental.activity.Profile;
 import com.foodamental.activity.Recipes;
 
 /**
@@ -37,12 +35,6 @@ public class MyMenu {
                 context.startActivity(intent);
                 break;
             }
-            case R.id.nav_profil:
-            {
-                Intent intent = new Intent(context, Profile.class);
-                context.startActivity(intent);
-                break;
-            }
             case R.id.nav_recettes:
             {
                 Intent intent = new Intent(context, Recipes.class);
@@ -51,7 +43,7 @@ public class MyMenu {
             }
             case R.id.nav_param:
             {
-                Intent intent = new Intent(context, Parametres.class);
+                Intent intent = new Intent(context, AlertPage.class);
                 context.startActivity(intent);
                 break;
             }
